@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="p5.min.js"></script>
+
+</head>
+<body>
+
+<script>
+var ax;
+var axHigh = 0;
+
+function setup() {
+   createCanvas(window.innerWidth,window.innerHeight)
+}
+function draw(){
+    ax = accelerationX;
+  if (ax < 15) {
+    axHigh = ax;
+    alert("high");
+  }
+  document.getElementById("ax").innerHTML = "X Accel = " + axHigh;
+}
+</script>
+</body>
+</html>
