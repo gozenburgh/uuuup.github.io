@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="p5.min.js"></script>
+
+</head>
+<body>
+<h1 id = "rz"></h1>
+<h1 id = "rx"></h1>
+<h1 id = "ry"></h1>
+
+<script>
+var rz - 0;
+var rx = 0;
+var ry = 0;
+
+function setup() {
+   createCanvas(window.innerWidth,window.innerHeight)
+}
+function draw(){
+    rz = rotationZ;
+    rx = rotationX;
+    ry = rotationY;
+    
+    document.getElementById("rx").innerHTML = "X = " + rx;
+    document.getElementById("ry").innerHTML = "Y = " + ry;
+    document.getElementById("rz").innerHTML = "Z = " + rz;
+  
+}
+</script>
+</body>
+</html>
